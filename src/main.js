@@ -4,8 +4,14 @@ import router from './router'
 // import axios from "axios"
 import {request} from "./network/request"
 Vue.config.productionTip = false
+import Vant from 'vant';
+import 'vant/lib/index.css';
+import { Lazyload } from 'vant';
 
-/* eslint-disable no-new */
+Vue.use(Lazyload);
+
+Vue.use(Vant);
+
 new Vue({
   el: '#app',
   router,

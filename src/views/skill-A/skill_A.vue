@@ -1,19 +1,25 @@
 <template>
   <div>
-    <h2>达达利亚：普通攻击</h2>
-    <img src="@/assets/img/普攻/A1.gif" alt="" />
+    <nav-bar class="skill-A"><div slot="center">购物街</div></nav-bar>
+    <swiper></swiper>
     
   </div>
 </template>
 
 <script>
+import NavBar from "@/components/common/navbar/NavBar.vue"
+import Swiper from '@/components/common/swiper/swiper.vue';
+
 export default {
   name: "A",
   data() {
     return {
     };
   },
-  components: {},
+  components: {
+    NavBar,
+    Swiper,
+  },
   methods: {
   },
 };
@@ -21,5 +27,8 @@ export default {
 
 
 <style scoped>
-
+.skill-A{
+  background-color: var(--color-tint);
+  color: #fff;
+}
 </style>

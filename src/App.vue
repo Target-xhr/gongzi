@@ -7,7 +7,6 @@
     <router-link to="/Q_2" tag="button" replace>近战Q</router-link> -->
     <!-- 动态绑定userid -->
     <!-- <router-link :to="'/user/'+userid" tag="button" replace>用户</router-link> -->
-
     <main-tab />
     <!-- <img src="@/assets/css/th2.jpg" alt=""> -->
     <router-view></router-view>
@@ -36,14 +35,14 @@ export default {
 
 <style>
 @import "./assets/css/base.css";
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+#app {
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+  /* color: #2c3e50;
+  margin-top: 60px; */
+}
 .active {
   color: blue;
 }
