@@ -18,6 +18,7 @@
 </template>
 
 <script>
+
 import mainTab from "@/components/content/mainTabbar/mainTab.vue";
 //vue-router 会在所有组件里添加$router属性
 export default {

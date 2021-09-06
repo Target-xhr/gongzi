@@ -4,8 +4,11 @@ import router from './router'
 // import axios from "axios"
 import {request} from "./network/request"
 Vue.config.productionTip = false
+
 import Vant from 'vant';
+//必须导入，否则不起作用
 import 'vant/lib/index.css';
+
 import { Lazyload } from 'vant';
 
 Vue.use(Lazyload);

@@ -1,9 +1,9 @@
 <template>
   <van-swipe :autoplay="3000">
     <van-swipe-item v-for="(item, index) in banner" :key="index">
-      <a href="item.link">
-          <img :src="item.image" alt="">
-      </a>
+      <!-- <a href="item.link"> -->
+        <img :src="item.image" alt="" />
+      <!-- </a> -->
     </van-swipe-item>
   </van-swipe>
 </template>
@@ -30,13 +30,15 @@ export default {
 };
 </script>
 
-<style>
-.my-swipe .van-swipe-item {
+<style scoped>
+.van-swipe-item {
   color: #fff;
-  font-size: 20px;
-  line-height: 50px;
+  line-height: 1.5vh;
   text-align: center;
-  background-color: #39a9ed;
-  display: flex;
+  /* background-color: #39a9ed; */
+}
+img{
+  width: 100vw;
+  height: 30vh;
 }
 </style>
